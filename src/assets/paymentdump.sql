@@ -1,0 +1,12 @@
+CREATE TABLE IF NOT EXISTS payments(paymentid INTEGER PRIMARY KEY AUTOINCREMENT, wallet TEXT,walletno TEXT, amount INTEGER, pin TEXT,usercode TEXT,dateadded DateTime);
+INSERT INTO payments(wallet, walletno, amount,pin,usercode,dateadded) VALUES ('Access Bank', '12345', 5000,'1234',12345,sysdate);
+INSERT INTO payments(wallet, walletno, amount,pin,usercode,dateadded) VALUES ('Access Bank', '12345', 5000,'1234',12345,sysdate);
+INSERT INTO payments(wallet, walletno, amount,pin,usercode,dateadded) VALUES ('Access Bank', '12345', 5000,'1234',12345,sysdate);
+INSERT INTO payments(wallet, walletno, amount,pin,usercode,dateadded) VALUES ('Access Bank', '12345', 5000,'1234',12345,sysdate);
+INSERT INTO payments(wallet, walletno, amount,pin,usercode,dateadded) VALUES ('Access Bank', '12345', 5000,'1234',12345,sysdate);
+INSERT INTO payments(wallet, walletno, amount,pin,usercode,dateadded) VALUES ('Access Bank', '12345', 5000,'1234',12345,sysdate);
+INSERT INTO payments(wallet, walletno, amount,pin,usercode,dateadded) VALUES ('Access Bank', '12345', 5000,'1234',12345,sysdate);
+INSERT INTO payments(wallet, walletno, amount,pin,usercode,dateadded) VALUES ('Access Bank', '12345', 5000,'1234',12345,sysdate);
+INSERT INTO payments(wallet, walletno, amount,pin,usercode,dateadded) VALUES ('Access Bank', '12345', 5000,'1234',12345,sysdate);
+INSERT INTO payments(wallet, walletno, amount,pin,usercode,dateadded) VALUES ('Access Bank', '12345', 5000,'1234',12345,sysdate);
+INSERT INTO payments(wallet, walletno, amount,pin,usercode,dateadded) VALUES ('Access Bank', '12345', 5000,'1234',12345,sysdate);

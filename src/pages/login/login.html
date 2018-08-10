@@ -1,0 +1,40 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+--><!-- pages/profile/profile.html -->
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      SUNU Assurances 
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="splash padding">
+    <div class="branding">
+        <img src="assets/imgs/logo.jpg" alt=" SUNU Assurances logo">
+      </div>
+  <form class="" #signForm="ngForm" (ngSubmit)="login()">
+      <ion-list padding>
+          <ion-item>
+            <ion-label>Username</ion-label>
+            <ion-input [(ngModel)]="userlogin.usercode" type="text" name="usercode" required></ion-input>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label>Password</ion-label>
+            <ion-input [(ngModel)]="userlogin.password" type="password" name="password" required></ion-input>
+          </ion-item>      
+        </ion-list>
+      
+        <div padding>
+          <button ion-button color="danger" block  type="submit">Sign In</button>
+        </div>
+  </form>
+  <div padding>
+  <button ion-button color="danger" block (click)="gotosignuppage()">
+      Register
+    </button>
+  </div>
+</ion-content>

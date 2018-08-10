@@ -1,0 +1,67 @@
+<!--
+  Generated template for the RegisterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar>
+      <ion-title>
+        SUNU Assurances 
+      </ion-title>
+      <button  ion-button (click)="gotosigninpage()">
+        <ion-icon name="home"></ion-icon>
+      </button>
+    </ion-navbar>
+  </ion-header>
+  <ion-content class="splash padding">
+      <div class="branding">
+          <img src="assets/imgs/logo.jpg" alt=" SUNU Assurances logo">
+        </div>
+    <form class="" #signupForm="ngForm" (ngSubmit)="registerUser()">
+        <ion-list padding>
+            <ion-item>
+              <ion-label>Firstname</ion-label>
+              <ion-input [(ngModel)]="userData.firstname" type="text" name="firstname" required></ion-input>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>Lastname</ion-label>
+              <ion-input [(ngModel)]="userData.lastname" type="text" name="lastname" required></ion-input>
+            </ion-item> 
+            <ion-item>
+              <ion-label>Email</ion-label>
+              <ion-input [(ngModel)]="userData.email" type="email" name="email"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label>Password</ion-label>
+              <ion-input [(ngModel)]="userData.password" type="password" name="password" required></ion-input>
+            </ion-item>         
+            <ion-item>
+              <ion-label>Msisdn</ion-label>
+              <ion-input [(ngModel)]="userData.msisdn" type="text" name="msisdn" required></ion-input>
+            </ion-item>  
+            <ion-item>
+              <ion-label>Bank</ion-label>
+              <ion-input [(ngModel)]="userData.bankname" type="text" name="bankname" required></ion-input>
+            </ion-item>
+         
+            <ion-item>
+              <ion-label>Account</ion-label>
+              <ion-input [(ngModel)]="userData.account" type="text" name="account" required></ion-input>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>Bvn</ion-label>
+              <ion-input [(ngModel)]="userData.bvn" type="text" name="bvn" required></ion-input>
+            </ion-item>   
+            <ion-item>
+              <ion-label>PIN</ion-label>
+              <ion-input [(ngModel)]="userData.pin" type="text" name="pin" required></ion-input>
+            </ion-item>
+          </ion-list> 
+          <div padding>
+            <button ion-button color="danger" block  type="submit">Sign Up</button>
+          </div>
+    </form>
+  </ion-content>

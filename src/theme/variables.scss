@@ -36,10 +36,13 @@ $app-direction: ltr;
 $colors: (
   primary:    #488aff,
   secondary:  #32db64,
-  danger:     #f53d3d,
+  danger:     #C72744,
   light:      #f4f4f4,
   dark:       #222
 );
+$toolbar-md-background: color($colors,danger);
+$tabs-md-background: color($colors,primary);
+$tab-button-icon:color($colors,light);
 
 
 // App iOS Variables

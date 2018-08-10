@@ -1,0 +1,79 @@
+page-login {
+
+}
+
+.star>.item-content {
+    background-color: #EEE8D6 !important;
+  }
+  
+  .splash {
+    background: url(../assets/imgs/sample_mission.jpg) no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .blue-chip{
+      box-shadow:0 6px 35px black;
+  }
+  .branding {
+    width: 50%;
+    max-width: 250px;
+    margin: 0 auto;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .welcome{
+      margin-top: 70px !important;
+      margin-bottom: 15px !important;
+      text-align: center;
+  }
+  #map{
+      width:80%;
+      height:300px;
+      margin:10px auto;
+      box-shadow:0 3px 25px black;
+  }
+  .tagline {
+    font-size: 1.4rem;
+  }
+  
+  .branding p {
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+  
+  .item-divider {
+    background-color: #EEE8D6;
+  }
+  
+  .button-positive,.bar-positive, .tabs-positive>.tabs {
+    background-color: #000066 !important;
+    border-color:  #417D9A;
+  }
+  .view-positive,{
+    background-color: #417D9A !important;
+    border-color:  #417D9A;
+  }
+  .item-thumbnail-left img {
+    border-radius: 10px;
+  }
+  
+  .item h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #417D9A;
+  }
+  
+  .dayhighlight {
+    background-color: #9EC6DE;
+    border-top: 20px solid #417D9A;
+  }
+  
+  .dayhighlight h2 {
+    color: #417D9A;
+    font-size: 2rem;
+    font-weight: 200;
+  }

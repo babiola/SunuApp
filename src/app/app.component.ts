@@ -1,10 +1,8 @@
+import { AuthProvider } from './../providers/auth/auth';
 import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-
-import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
 
 @Component({
   templateUrl: 'app.html'
@@ -12,17 +10,25 @@ import { ListPage } from '../pages/list/list';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = HomePage;
+  rootPage: any;
 
   pages: Array<{title: string, component: any}>;
 
-  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
+  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen,private authprovider:AuthProvider) {
+    if (this.authprovider.authenticated()) {
+      this.rootPage = 'HomePage';
+    } else {
+      this.rootPage = 'LoginPage';
+    }
     this.initializeApp();
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage }
+      { title: 'Dashboard', component: 'HomePage' },
+      { title: 'Comprehensive', component: 'ComPage' },
+      { title: 'International Travel', component: 'InternationalPage' },
+      { title: 'Third Party Auto', component: 'ThirdpartyPage' },
+      { title: 'Group Policy', component: 'PolicyPage' },
     ];
 
   }
@@ -40,5 +46,9 @@ export class MyApp {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
     this.nav.setRoot(page.component);
+  }
+  signout(){
+    this.authprovider.signuserout();
+    this.rootPage = 'LoginPage';
   }
 }
